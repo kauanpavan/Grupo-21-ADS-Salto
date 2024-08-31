@@ -24,20 +24,6 @@ O projeto é composto por três arquivos principais:
 
 - **Sistema de feedback para posts**: Os usuários podem adicionar feedbacks às dúvidas postadas, ajudando na resolução dos problemas.
 
-## Como Usar
-
-1. Clone o repositório para sua máquina local:
-    ```sh
-    git clone https://github.com/seu-usuario/jobbit-forum.git
-    ```
-
-2. Navegue até o diretório do projeto:
-    ```sh
-    cd jobbit-forum
-    ```
-
-3. Abra o arquivo `index.html` no seu navegador de preferência para visualizar o projeto.
-
 ## Estrutura de Arquivos
 
 ```plaintext
