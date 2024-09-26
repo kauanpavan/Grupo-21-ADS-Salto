@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: 2px solid #525252;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+#msgError, #msgSuccess {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgError {
+    color: #ff6464;
+    background-color: #3e1414;
+}
+
+#msgSuccess {
+    color: #4caf50;
+    background-color: #1c361c;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid #525252;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 23px;
+    margin-bottom: 20px;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #00ff9d;
+}
+
+.label-float label {
+    color: #ffffff;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 12px;
+    top: -10px;
+    color: #00ff9d;
+}
+
+button {
+    background: #525252;
+    border-color: #333333;
+    color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+button:hover {
+    background: #666666;
+}
+
+justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #525252;
+}
+
+p {
+    color: #cccccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    color: #4caf50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: #64ff64;
+}
+input{
+    color: white;
+}

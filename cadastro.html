@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/stylecadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h1>CADASTRAR</h1>
+
+                <div id="msgError"> </div>
+                <div id="msgSuccess"> </div>
+
+                <div class="label-float">
+
+                    <input type="text" id="nome" placeholder=" ">
+                    <label id="labelNome" for="nome">Nome</label>
+
+                </div>
+
+                <div class="label-float">
+
+                    <input type="text" id="usuario" placeholder=" ">
+                    <label id="labelUsuario" for="usuario">Login</label>
+
+                </div>
+                <div class="label-float">
+                    
+                    <input type="password" id="senha" placeholder=" ">
+                    <label id="labelSenha" for="usuario">Senha</label>
+
+                </div>
+                <div class="label-float">
+                    
+                    <input type="password" id="confirmSenha" placeholder=" ">
+                    <label id="labelConfirmSenha" for="usuario">Confirmar Senha</label>
+
+                </div>
+                <div class="justify-center">
+
+                    <button onclick="cadastrar()">Cadastre-se</button>
+                    <hr>
+                </div>
+                <p> Novo usuario?
+                    <a href="index.html" style="color: red;">Clique Aqui</a>
+                </p>
+            </div>
+
+                </div>
+         
+
+               
+        </div>
+    </main>
+   <script src="JS/cadastro.js"></script>
+   <script src="JS/validar.js"></script>
+</body>
+</html>
