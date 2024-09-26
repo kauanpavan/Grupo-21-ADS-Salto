@@ -6,130 +6,142 @@
 }
 
 body {
-    background-color: #1f1f1f;
+    background: linear-gradient(135deg, #f0f0f0, #c0c0c0);
+    color: #2c2c2c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 50px;
+    padding: 20px;
 }
 
 .card {
-    background: #2d2d2d;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    border: 2px solid #525252;
-    width: 400px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cccccc;
+    width: 100%;
+    min-width: 600px;
+    max-width: 800px; /* Card mais largo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #f0f0f0;
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 #msgError, #msgSuccess {
     text-align: center;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
     display: none;
 }
 
 #msgError {
-    color: #ff6464;
-    background-color: #3e1414;
+    color: #e57373;
+    background-color: #ffebee;
 }
 
 #msgSuccess {
     color: #4caf50;
-    background-color: #1c361c;
-}
-
-.label-float input {
-    width: 100%;
-    padding: 10px;
-    border: 0;
-    border-bottom: 2px solid #525252;
-    background-color: transparent;
-    outline: none;
-    font-size: 16px;
-    transition: all .3s ease-in-out;
+    background-color: #e8f5e9;
 }
 
 .label-float {
     position: relative;
-    padding-top: 23px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #aaaaaa;
+    background-color: transparent;
+    color: #333333;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #00ff9d;
+    border-bottom: 2px solid #4caf50;
 }
 
 .label-float label {
-    color: #ffffff;
+    color: #666666;
     pointer-events: none;
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 0;
-    transition: all .3s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .label-float input:focus + label,
 .label-float input:valid + label {
     font-size: 12px;
     top: -10px;
-    color: #00ff9d;
+    color: #4caf50;
 }
 
 button {
-    background: #525252;
-    border-color: #333333;
-    color: #f0f0f0;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 14pt;
-    border-radius: 4px;
+    background: #333333;
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
-    outline: none;
-    transition: all .2s ease-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%;
 }
-button:hover {
-    background: #666666;
-}
 
-justify-center {
-    display: flex;
-    justify-content: center;
+button:hover {
+    background: #07e5f5;
+    transform: scale(1.05);
 }
 
 hr {
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid #525252;
+    border: 1px solid #dddddd;
 }
 
 p {
-    color: #cccccc;
+    color: #555555;
     font-size: 14px;
     text-align: center;
 }
 
 a {
-    color: #4caf50;
+    color: #00796b;
     font-weight: bold;
     text-decoration: none;
-    transition: all .3s ease-out;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #64ff64;
+    color: #004d40;
 }
-input{
-    color: white;
+
+input {
+    color: #333333;
 }

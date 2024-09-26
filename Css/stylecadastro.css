@@ -4,26 +4,31 @@
 }
 
 body {
-    background-color: #1f1f1f;
+    background: linear-gradient(135deg, #f5f5f5, #c7c7c7);
+    color: #2c2c2c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #msgError, #msgSuccess {
     text-align: center;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 12px;
+    border-radius: 8px;
     display: none;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 #msgError {
-    color: #ff6464;
-    background-color: #3e1414;
-    margin-bottom: 20px;
+    color: #e57373;
+    background-color: #ffebee;
 }
 
 #msgSuccess {
     color: #4caf50;
-    background-color: #1c361c;
-    margin-bottom: 20px;
+    background-color: #e8f5e9;
 }
 
 .container {
@@ -34,39 +39,49 @@ body {
 }
 
 .card {
-    background: #444444;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    border: 2px solid #525252;
-    width: 400px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cccccc;
+    width: 100%;
+    min-width: 600px;
+    max-width: 800px; /* Card mais largo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #f0f0f0;
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 24px;
 }
 
 .label-float input {
     width: 100%;
-    padding: 10px;
-    border: 0;
-    border-bottom: 2px solid #525252;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #aaaaaa;
     background-color: transparent;
     outline: none;
     font-size: 16px;
-    transition: all .3s ease-in-out;
+    transition: border-color 0.3s ease;
+    color: #333333;
 }
 
 .label-float {
     position: relative;
-    padding-top: 23px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 25px;
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #28f566;
+    border-bottom: 2px solid #4caf50;
 }
 
 .label-float label {
@@ -75,41 +90,35 @@ h1 {
     position: absolute;
     top: 10px;
     left: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .label-float input:focus + label,
 .label-float input:valid + label {
     font-size: 12px;
     top: -10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 button {
-    background: #525252;
-    border-color: #333333;
-    color: #f0f0f0;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 14pt;
-    border-radius: 4px;
+    background: #333333;
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
-    outline: none;
-    transition: all .2s ease-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%;
 }
 
 button:hover {
-    background: #666666;
+    background: #555555;
+    transform: scale(1.05);
 }
 
-justify-center {
-    display: flex;
-    justify-content: center;
-}
 hr {
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid #525252;
+    border: 1px solid #dddddd;
 }
